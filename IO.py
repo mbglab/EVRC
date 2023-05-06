@@ -80,7 +80,7 @@ def ReadfileIntra(file_path):
     ```
     '''
     f_list=[]
-    f = open (file_path ,"r")
+    f = open(file_path ,"r")
     for eachline in f:
         if eachline: 
             pass 
@@ -117,7 +117,7 @@ def ReadfileInter(each, file_path, intra_bin_num, intra_bin_num_zero):
     Matrix file must be a text file.
     '''
     f_list=[]
-    f = open (file_path, "r")
+    f = open(file_path, "r")
 
     for eachline in f:
         if eachline:
