@@ -3,7 +3,6 @@
 # Author: Xiao Wang, 2018-12; Modified by Jie Li and Bin-Guang Ma, 2023-03. 
 
 import numpy as np 
-import math
 
 class Matrix:
     '''The matrix object involves interaction frequency (IF) matrix processing and transforming into the expected distance matrix.'''
