@@ -19,21 +19,21 @@ python evrc.py --intra_chr FilePath --inter_chr FilePath --chr_num Chromosome_Nu
 
 Required parameters: 
 
---intra_chr     file path of intrachromosomal interaction matrix 
---chr_num       the number of chromosomes 
--o              output file path
+--intra_chr     file path of intrachromosomal interaction matrix  
+--chr_num       the number of chromosomes  
+-o              output file path  
 
 Optional prameters: 
 
---inter_chr     file path of interchromosomal interaction matrix 
---help          show help (also -h) 
---sf            smooth factor (default: "auto". Do not smooth the structure)
---alpha         the transformation exponent from interaction matrix into distance matrix (default: 0.5)
---scale         the size of chromosomes (default: 20.0)
---iter_num      the number of iterations (default: "auto". The program will terminate when F value is less than 1E-6)
---seed          seed for generating random initial 3D coordinates (default: "auto")
---thread        the number of threads (default: "auto". All the CPU cores will be used)
---beta          convergence factor(default: 0.1; The higher the beta value, the slower the convergence speed. The beta value should be increased if it does not converge)
+--inter_chr     file path of interchromosomal interaction matrix  
+--help          show help (also -h)  
+--sf            smooth factor (default: "auto". Do not smooth the structure)  
+--alpha         the transformation exponent from interaction matrix into distance matrix (default: 0.5)  
+--scale         the size of chromosomes (default: 20.0)  
+--iter_num      the number of iterations (default: "auto". The program will terminate when F value is less than 1E-6)  
+--seed          seed for generating random initial 3D coordinates (default: "auto")  
+--thread        the number of threads (default: "auto". All the CPU cores will be used)  
+--beta          convergence factor(default: 0.1; The higher the beta value, the slower the convergence speed. The beta value should be increased if it does not converge)  
 
 
 
@@ -72,9 +72,9 @@ Example:
 
 For the 3D structure reconstruction of a single chromosome, an input file directory is required, which contains an interaction frequency file of the chromosome, and the prefix of this file name should be 'chr1_'.
 
-For the 3D structure reconstruction of multiple chromosomes, it is necessary to provide a file directory for intra-chromosome interaction and a file directory for inter-chromosome interaction. 
-The file directory of intra-chromosome interaction contains the file name prefix of chr1_, chr2_, etc. 
-The file directory of inter-chromosome interaction contains the file name prefix of chr1_chr2, chr1_chr3, chr2_chr3, etc.
+For the 3D structure reconstruction of multiple chromosomes, it is necessary to provide a file directory for intra-chromosome interaction and a file directory for inter-chromosome interaction.  
+The file directory of intra-chromosome interaction contains the file name prefix of chr1_, chr2_, etc.  
+The file directory of inter-chromosome interaction contains the file name prefix of chr1_chr2, chr1_chr3, chr2_chr3, etc.  
 
 # Output file format
 The output file is a '.pdb' file that follows the standard PDB format. You can use any PDB viewer program to draw the structure.
