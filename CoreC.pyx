@@ -7,7 +7,7 @@ import numpy as np
 from Matrix import *
 
 # Cython: boundscheck = False
-from cython.parallel import prange, parallel
+from cython.parallel import prange
 from libc.math cimport sqrt
 cimport numpy as np
 cimport openmp
