@@ -27,7 +27,7 @@ Optional prameters:
 
 --inter_chr     file path of interchromosomal interaction matrix  
 --help          show help (also -h)  
---sf            smooth factor (default: "auto". Do not smooth the structure)  
+--sf            smoothing factor (default: "auto". Do not smooth the structure)  
 --alpha         the transformation exponent from interaction matrix into distance matrix (default: 0.5)  
 --scale         the size of chromosomes (default: 20.0)  
 --iter_num      the number of iterations (default: "auto". The program will terminate when F value is less than 1E-6)  
