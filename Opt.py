@@ -105,7 +105,7 @@ def ShowHelp():
 Usage: 
 
 python evrc.py --intra_chr FilePath --inter_chr FilePath --chr_num Chromosome_Number -o OutputFilePath \
---sf Smooth_factor --alpha Transform_Exponent  \
+--sf Smoothing_factor --alpha Transform_Exponent  \
 --iter_num Iteration_Number --seed Seed --thread Thread_Number --beta Convergence_Factor
 
 Required parameters: 
@@ -118,7 +118,7 @@ Optional prameters:
 
 --inter_chr     file path of the interchromosomal contact matrix 
 --help          show help (also -h) 
---sf            smooth factor (default: "auto". Do not smooth the structure)
+--sf            smoothing factor (default: "auto". Do not smooth the structure)
 --alpha         the transformation exponent from interaction matrix into distance matrix (default: 0.5)
 --iter_num      the number of iterations (default: "auto". The program will terminate when F value is less than 1E-6)
 --seed          seed for generating the random initial 3D coordinates (default: "auto")
